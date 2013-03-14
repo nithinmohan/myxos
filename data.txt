@@ -1,0 +1,579 @@
+INTRODUCTION
+
+
+
+Cloud computing
+ is a model for
+ enabling ubiqu
+itous, convenie
+nt, on-demand n
+etwork access t
+o a shared pool
+ of configurabl
+e computing res
+ources (e.g., n
+etworks, server
+s, storage, 
+
+applications, a
+nd services) th
+at can be rapid
+ly provisioned 
+and released wi
+th minimal mana
+gement effort o
+r service provi
+der interaction
+. [1 from repor
+t_S7]. Load Bal
+ancing is the 
+
+process of dist
+ributing the lo
+ad among variou
+s nodes of a di
+stributed syste
+m when it becom
+es difficult to
+ predict the nu
+mber of request
+s that will be 
+issued to a ser
+ver. It conside
+rs 
+
+factors like ex
+ecution time, r
+esource availab
+ility and requi
+rement among ot
+hers to improve
+ job response t
+ime, throughput
+, etc. In order
+ to provide bet
+ter service-lev
+el agreements, 
+
+
+the cloud provi
+der has to prov
+ide such improv
+ements to the u
+ser.
+
+
+
+Quality of Serv
+ice (QoS) is th
+e resource rese
+rvation control
+ mechanism in p
+lace to guarant
+ee a certain le
+vel of performa
+nce and availab
+ility of a serv
+ice. It provide
+s a level of as
+surance 
+
+that the resour
+ce requirements
+ of an applicat
+ion are strictl
+y supported. It
+ is possible th
+at the resource
+ requirement of
+ a user may not
+ be supported b
+y the cloud pro
+vider. In such 
+
+
+scenarios, the 
+cloud provider 
+has to provide 
+a means of exec
+uting the user'
+s load. The clo
+ud provider has
+ to decide the 
+appropriate str
+ategy such that
+ the user's nee
+ds are met. One
+ of 
+
+the most intere
+sting aspects i
+n Cloud Computi
+ng is the feeli
+ng of availabil
+ity of 'infinit
+e' computing re
+sources that th
+e cloud provide
+r tries to dist
+ribute to the u
+ser in an elast
+ic way. 
+
+The user does n
+ot fully realiz
+e the internal 
+allocations whi
+le demanding fo
+r more resource
+s.
+
+
+
+
+
+For this infini
+te demand of th
+e user to be me
+t, the cloud pr
+ovider has to f
+ind ways to do 
+it while incurr
+ing no loss. On
+e of the approa
+ches to do it i
+s to calculate 
+the number of t
+imes 
+
+the provider do
+es not have the
+ capacity to ex
+ecute the load 
+and based on th
+at draw up an a
+greement with a
+nother provider
+ to execute the
+ load. This cal
+culation can be
+ predicted from
+ 
+
+past data throu
+gh forecasting 
+and also by inc
+luding the curr
+ent data using 
+game theory, st
+andard deviatio
+n can help in d
+eciding the str
+ategy of the cl
+oud provider.
+
+
+
+
+
+
+
+LITERATURE SURV
+EY
+
+
+
+
+
+The following a
+spect  is new i
+n Cloud Computi
+ng: the illusio
+n of infinite c
+omputing resour
+ces available o
+n demand, there
+by eliminating 
+the need for Cl
+oud 
+
+Computing users
+ to plan far ah
+ead for provisi
+oning. For this
+, realizing the
+ economies of s
+cale afforded b
+y statistical m
+ultiplexing and
+ bulk purchasin
+g requires the 
+construction of
+ 
+
+extremely large
+ datacenters. B
+uilding, provis
+ioning, and lau
+nching such a f
+acility is a hu
+ndred-million-d
+ollar undertaki
+ng.
+
+ [http://www.ee
+cs.berkeley.edu
+/Pubs/TechRpts/
+2009/EECS-2009-
+28.pdf]
+
+
+
+
+
+A system compos
+ed of a virtual
+ network of vir
+tual machines c
+apable of live 
+migration acros
+s multi- domain
+ physical infra
+structure have 
+been constructe
+d. By using dyn
+amic availabili
+ty of 
+
+infrastructure 
+resources and d
+ynamic applicat
+ion demand, a v
+irtual computat
+ion environment
+ is able to aut
+omatically relo
+cate itself acr
+oss the infrast
+ructure and sca
+le its resource
+s. Thus 
+
+the QoS improve
+ments can be me
+t using this vi
+rtual machine s
+etup. Depending
+ on the type of
+ application, t
+he generated wo
+rkload can be a
+ highly varying
+ process that t
+urns difficult 
+to 
+
+find an accepta
+ble trade-off b
+etween an expen
+sive over-provi
+sioning able to
+ anticipate pea
+k loads and a s
+ub performing r
+esource allocat
+ion that does n
+ot 
+
+mobilize enough
+ resources. The
+se properties c
+an be leveraged
+ to derive a pr
+obabilistic ass
+umption on the 
+mean workload o
+f the system at
+ different time
+ resolutions. 
+
+
+
+There are many 
+proposals that 
+dynamically man
+age Virtual Mac
+hines by optimi
+zing some objec
+tive function s
+uch as minimizi
+ng cost functio
+n, cost perform
+ance function 
+
+and meeting QoS
+ objectives. Th
+e objective fun
+ction is define
+d as Utility pr
+operty which is
+ selected based
+ on measures of
+ response time,
+ number of QoS,
+ 
+
+targets met and
+ profit etc. Th
+is Utility prop
+erty can then b
+e adjusted to i
+nclude factors 
+of individual i
+mportance. Thes
+e appraoches ha
+ve been modifie
+d to 
+
+meet needs acco
+rding to curren
+t demand. But t
+hey may prove c
+omplex and  may
+ not work in a 
+practical virtu
+alization cloud
+ system 
+
+with real workl
+oad. These appr
+oaches work bes
+t for stationar
+y demands and m
+ay not give opt
+imal solution f
+or dynamic reso
+urce requiremen
+ts. The utility
+ property can b
+e modified to 
+
+include dynamic
+ demands and al
+location. This 
+requires formul
+ating the appro
+priate utility 
+property that c
+aptures these d
+emands.
+
+
+
+
+
+CONCLUSION
+
+
+
+In this paper, 
+we have discuss
+ed one approach
+ of how the ill
+usion of infini
+te resources in
+ Cloud Computin
+g can be furthe
+r optimized wit
+hout incurring 
+any loss for th
+e cloud provide
+r. 
+
+QoS can be impr
+oved and thus p
+rovide the user
+ with better fa
+cilities. The c
+loud provider c
+an decide wheth
+er he wants to 
+rent out the lo
+ad and prevent 
+disappointing t
+he user or just
+ 
+
+execute what is
+ possible. Fore
+casting followe
+d by game theor
+y gives a bette
+r approach of i
+ncluding the da
+ta available ti
+ll the current 
+point and will 
+help in correct
+ly 
+
+deciding the st
+rategies. From 
+these results, 
+a cloud provide
+r can also chec
+k the number of
+ times he is re
+nting out the l
+oad and based o
+n further calcu
+lations he can 
+decide to own 
+
+more facilities
+ such that the 
+frequency of re
+nting will decr
+ease and he may
+ earn more prof
+it. This can be
+ modelled as a 
+Ski-Rental prob
+lem and further
+ worked out.
+
+
+
+This paper prov
+ides one method
+ of tackling th
+e problem and i
+t further opens
+ up interesting
+ avenues for im
+provement. The 
+utility propert
+y can be change
+d to suit the 
+
+agreement betwe
+en the provider
+ and the user. 
+This approach c
+ onsiders execu
+tion time as on
+e of the factor
+s and this may 
+change dependin
+g on the networ
+k traffic 
+
+and other dynam
+ic factors whic
+h will further 
+complicate the 
+utility propert
+y. There can be
+ different util
+ity functions t
+hat can be used
+ conmsidering m
+ore factors. 
+
+Other game-theo
+retic concepts 
+and forecasting
+ models can als
+o be used to ob
+tain results. S
+ince the avenue
+s are deep and 
+the domain is s
+till growing, u
+pdates on 
+
+this problem wi
+ll keep on incr
+easing until an
+ optimal soluti
+on is reached.
+
+
+
+
+
+ABSTRACT
+
+
+
+As Cloud Comput
+ing is an emerg
+ing field, many
+ improvements a
+re being propos
+ed to provide u
+sers with bette
+r services and 
+facilities. Thi
+s paper deals w
+ith one of the 
+aspects of Clou
+d 
+
+Computing which
+ is an illusion
+ of infinite re
+source availabi
+lity on demand.
+ A c ombination
+ of forecasting
+ models and gam
+e theoretic app
+roaches have be
+en proposed so 
+as 
+
+to continue pro
+viding this ill
+usion without a
+ny glitches. Th
+is implementati
+on is a new way
+ of looking at 
+the problem and
+ with co-ordina
+tion from diffe
+rent providers 
+it becomes poss
+ible 
+
+for each provid
+er to decide on
+ his best strat
+egy.  Game theo
+ry is a concept
+ that is genera
+lly applied for
+ economics and 
+hence is a good
+ way to engage 
+it in deciding 
+the economical 
+
+
+capabilities of
+ the company wh
+ich can be done
+ by adding it t
+o the utility p
+roperty. This c
+an be further e
+nhanced by incl
+uding more fact
+ors in the util
+ity and proivin
+ding methods fo
+r 
+
+scalability.
+

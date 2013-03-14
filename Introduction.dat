@@ -1,0 +1,78 @@
+INTRODUCTION
+
+Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, 
+applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. [1 from report_S7]. Load Balancing is the 
+process of distributing the load among various nodes of a distributed system when it becomes difficult to predict the number of requests that will be issued to a server. It considers 
+factors like execution time, resource availability and requirement among others to improve job response time, throughput, etc. In order to provide better service-level agreements, 
+the cloud provider has to provide such improvements to the user.
+
+Quality of Service (QoS) is the resource reservation control mechanism in place to guarantee a certain level of performance and availability of a service. It provides a level of assurance 
+that the resource requirements of an application are strictly supported. It is possible that the resource requirement of a user may not be supported by the cloud provider. In such 
+scenarios, the cloud provider has to provide a means of executing the user's load. The cloud provider has to decide the appropriate strategy such that the user's needs are met. One of 
+the most interesting aspects in Cloud Computing is the feeling of availability of 'infinite' computing resources that the cloud provider tries to distribute to the user in an elastic way. 
+The user does not fully realize the internal allocations while demanding for more resources.
+
+
+For this infinite demand of the user to be met, the cloud provider has to find ways to do it while incurring no loss. One of the approaches to do it is to calculate the number of times 
+the provider does not have the capacity to execute the load and based on that draw up an agreement with another provider to execute the load. This calculation can be predicted from 
+past data through forecasting and also by including the current data using game theory, standard deviation can help in deciding the strategy of the cloud provider.
+
+
+
+LITERATURE SURVEY
+
+
+The following aspect  is new in Cloud Computing: the illusion of infinite computing resources available on demand, thereby eliminating the need for Cloud 
+Computing users to plan far ahead for provisioning. For this, realizing the economies of scale afforded by statistical multiplexing and bulk purchasing requires the construction of 
+extremely large datacenters. Building, provisioning, and launching such a facility is a hundred-million-dollar undertaking.
+ [http://www.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-28.pdf]
+
+
+A system composed of a virtual network of virtual machines capable of live migration across multi- domain physical infrastructure have been constructed. By using dynamic availability of 
+infrastructure resources and dynamic application demand, a virtual computation environment is able to automatically relocate itself across the infrastructure and scale its resources. Thus 
+the QoS improvements can be met using this virtual machine setup. Depending on the type of application, the generated workload can be a highly varying process that turns difficult to 
+find an acceptable trade-off between an expensive over-provisioning able to anticipate peak loads and a sub performing resource allocation that does not 
+mobilize enough resources. These properties can be leveraged to derive a probabilistic assumption on the mean workload of the system at different time resolutions. 
+
+There are many proposals that dynamically manage Virtual Machines by optimizing some objective function such as minimizing cost function, cost performance function 
+and meeting QoS objectives. The objective function is defined as Utility property which is selected based on measures of response time, number of QoS, 
+targets met and profit etc. This Utility property can then be adjusted to include factors of individual importance. These appraoches have been modified to 
+meet needs according to current demand. But they may prove complex and  may not work in a practical virtualization cloud system 
+with real workload. These approaches work best for stationary demands and may not give optimal solution for dynamic resource requirements. The utility property can be modified to 
+include dynamic demands and allocation. This requires formulating the appropriate utility property that captures these demands.
+
+
+CONCLUSION
+
+In this paper, we have discussed one approach of how the illusion of infinite resources in Cloud Computing can be further optimized without incurring any loss for the cloud provider. 
+QoS can be improved and thus provide the user with better facilities. The cloud provider can decide whether he wants to rent out the load and prevent disappointing the user or just 
+execute what is possible. Forecasting followed by game theory gives a better approach of including the data available till the current point and will help in correctly 
+deciding the strategies. From these results, a cloud provider can also check the number of times he is renting out the load and based on further calculations he can decide to own 
+more facilities such that the frequency of renting will decrease and he may earn more profit. This can be modelled as a Ski-Rental problem and further worked out.
+
+This paper provides one method of tackling the problem and it further opens up interesting avenues for improvement. The utility property can be changed to suit the 
+agreement between the provider and the user. This approach c onsiders execution time as one of the factors and this may change depending on the network traffic 
+and other dynamic factors which will further complicate the utility property. There can be different utility functions that can be used conmsidering more factors. 
+Other game-theoretic concepts and forecasting models can also be used to obtain results. Since the avenues are deep and the domain is still growing, updates on 
+this problem will keep on increasing until an optimal solution is reached.
+
+
+ABSTRACT
+
+As Cloud Computing is an emerging field, many improvements are being proposed to provide users with better services and facilities. This paper deals with one of the aspects of Cloud 
+Computing which is an illusion of infinite resource availability on demand. A c ombination of forecasting models and game theoretic approaches have been proposed so as 
+to continue providing this illusion without any glitches. This implementation is a new way of looking at the problem and with co-ordination from different providers it becomes possible 
+for each provider to decide on his best strategy.  Game theory is a concept that is generally applied for economics and hence is a good way to engage it in deciding the economical 
+capabilities of the company which can be done by adding it to the utility property. This can be further enhanced by including more factors in the utility and proivinding methods for 
+scalability.
+
+
+
+
+
+
+
+-QoS (Aviral link (gmail chat))
+
+
+http://www.dummies.com/how-to/content/comparing-public-private-and-hybrid-cloud-computin.html
